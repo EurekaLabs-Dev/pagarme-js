@@ -54,6 +54,8 @@ describe('PagarMe', function() {
 				card.cardNumber = '509005334509218';
 				card.brand().should.be.equal('elo');
 
+				card.cardNumber = '6550210000000006';
+				card.brand().should.be.equal('elo');
 			});
 
 			it('should identify discover card numbers.', function() {
